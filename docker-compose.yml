@@ -1,7 +1,7 @@
 services:
     openproject:
-        stdin_  open: true
-        tty: true
+        # stdin_  open: true
+        # tty: true
         ports:
             - 8080:80
         restart: unless-stopped    
