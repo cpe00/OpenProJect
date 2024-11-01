@@ -4,6 +4,7 @@ services:
         tty: true
         ports:
             - 8080:80
+        restart: unless-stopped    
         environment:
             - OPENPROJECT_SECRET_KEY_BASE=secret
             - OPENPROJECT_HOST__NAME=localhost:8080
